@@ -337,10 +337,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/permissions/privapp-permissions-mediatek.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-mediatek.xml
 
-# IORap
-PRODUCT_PRODUCT_PROPERTIES += \
-     ro.iorapd.enable=true
-
 # Keylayout
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/keylayout/uinput-fpc.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/uinput-fpc.kl \
