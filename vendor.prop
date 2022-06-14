@@ -172,6 +172,8 @@ persist.vendor.mtk_ct_volte_support=3
 persist.vendor.radio.mtk_ps2_rat=L/W/G
 persist.vendor.radio.mtk_ps3_rat=G
 persist.vendor.radio.smart.data.switch=1
+persist.radio.multisim.config=dsds
+persist.vendor.radio.msimmode=dsds
 ro.vendor.mtk_protocol1_rat_config=C/Lf/Lt/W/T/G
 ro.telephony.default_network=10,10,10,10
 ro.vendor.mtk_md1_support=12
@@ -183,6 +185,9 @@ ro.vendor.mtk_c2k_support=1
 telephony.lteOnCdmaDevice=1
 ro.vendor.mtk_ril_mode=c6m_1rild
 ro.vendor.md_prop_ver=1
+ro.vendor.radio.max.multisim=dsds
+ro.telephony.sim.count=2
+telephony.active_modems.max_count=2
 import /vendor/build_${ro.boot.radio.multisim.config}_vendor.prop
 
 # SurfaceFlinger
