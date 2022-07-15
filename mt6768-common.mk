@@ -136,6 +136,10 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl.recovery \
     android.hardware.health@2.1-service
 
+# Iorapd
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.iorapd.enable=false
+
 # IR
 PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
