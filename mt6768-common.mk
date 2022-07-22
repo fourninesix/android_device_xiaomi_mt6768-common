@@ -375,6 +375,16 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     RcsService
 
+# Runtime Resource Overlays
+PRODUCT_PACKAGES += \
+    DialerOverlayMT6768 \
+    FrameworksResOverlayMT6768 \
+    NotchBarKiller \
+    SettingsProviderOverlayMT6768 \
+    SystemUIOverlayMT6768 \
+    TetheringConfigOverlay \
+    WifiOverlay 
+
 # VNDK v30 Copy Files
 PRODUCT_COPY_FILES += \
     prebuilts/vndk/v30/arm64/arch-arm-armv8-a/shared/vndk-sp/libutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libutils-v30.so \
@@ -391,9 +401,6 @@ PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf
 
 PRODUCT_PACKAGES += \
-    NotchBarKiller \
-    WifiOverlay \
-    TetheringConfigOverlay \
     android.hardware.wifi@1.0.vendor \
     android.hardware.wifi@1.1.vendor \
     android.hardware.wifi@1.2.vendor \
